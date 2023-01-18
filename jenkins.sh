@@ -1,5 +1,5 @@
 #!/bin/bash
-#Author: Kelvin
+#Author: Eric
 #Date: October 19 2020
 #Description: Jenkins installation:
 
