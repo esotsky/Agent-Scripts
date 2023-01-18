@@ -5,7 +5,7 @@ pipeline {
         stage("create zip file"){
             steps{
                
-           sh 'zip AgentScript-${BUILD_NUMBER}.zip *  --exclude Jenkinsfile README.md pkg-installation pkg-modification1 pkg-modification2 docker Apache '  
+           sh 'zip AgentScript-${BUILD_NUMBER}.zip *  --exclude Jenkinsfile README.md pkg-installation pkg-modification1 pkg-modification2 docker'  
             
             }
         }
