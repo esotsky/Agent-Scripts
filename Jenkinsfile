@@ -2,20 +2,13 @@ pipeline {
     agent any
 
     stages{
-        stage("build"){
+        stage("create zip file"){
             steps{
-                echo "build"
+               
+           sh 'zip AgentScript-${BUILD_NUMBER}.zip *  --exclude Jenkinsfile README.md pkg-installation pkg-modification1 pkg-modification2 LICENSE docker Apache '  
+            
             }
         }
-        stage("test"){
-            steps{
-                echo "test"
-            }
-        }
-        stage("deploy"){
-            steps{
-                echo "deploy"
-            }
-        }
+        
     }
 }
